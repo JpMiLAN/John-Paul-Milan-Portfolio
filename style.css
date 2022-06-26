@@ -1,0 +1,108 @@
+/*
+Syntax: 
+
+selector{
+	
+	property: value; <--- declaration
+}
+selectors= id, class, tag, universal;
+id=#
+class=.
+tag=tagName
+universAL= *  <--- targets all elements
+
+*/
+
+*{
+	font-family: "Roboto", sans-serif;
+
+}
+h1, h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	border: 5px solid blue;
+	border-radius: 100%;
+}
+
+#landing	{
+
+	/*vh- viewport height --> determined or measured percentage of the height of the device you are viewing webpage in*/
+	height:  110vh;
+
+	/*flexbox- --> allows us to arrage layout elements inside our landing section horizontally and vertically
+	by default, display: flex arrages elements inside parents*/
+	display: flex;
+
+	/*flex direction---> arrages flex items into a column*/
+	flex-direction: column;
+
+
+	/*align items center --> arrages all flex items to be horizontally*/
+	align-items: center;
+
+	/*justify content center ---> arrages elemets horizontally if the flex context are ion the row
+	however, it arrages elements vertically if the flex items are in column*/
+	justify-content: center;
+}
+.jumbotron	{
+
+	/*chnaging the background of jumbotron from its default color of grey, to transparent*/
+	background-color: transparent;
+}
+
+#gallery	{
+
+	height: 60vh;
+
+	/*flexbox- --> allows us to arrage layout elements inside our landing section horizontally and vertically
+	by default, display: flex arrages elements inside parents*/
+	display: flex;
+
+	/*flex direction---> arrages flex items into a column*/
+	flex-direction: column;
+
+
+	/*align items center --> arrages all flex items to be horizontally*/
+	align-items: center;
+
+	/*justify content center ---> arrages elemets horizontally if the flex context are ion the row
+	however, it arrages elements vertically if the flex items are in column*/
+	justify-content: center;
+	color: #ffc107;
+	border-radius: 6px;
+}
+
+ul{
+
+	list-style: none;
+	padding: 0;
+}
+
+h3{
+
+	color: #007bff;
+}
+
+.tools{
+
+	border: 5px solid #f2f2f2;
+
+	/*space outside the element*/
+	margin: 10px;
+
+	/*space between the elements inside the border*/
+	padding: 5px;
+
+	height: 150px;
+	width: 75%;
+}
+
+html{
+
+	/*makes the scrool smooth*/
+	scroll-behavior: smooth;
+}
