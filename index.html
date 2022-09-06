@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
+
 <html lang="en">
 <head>
+
+    <!-- the charser and name ay ang line of codes para kahit e view ta ang website sa cellphone or computer, the layout will remane the same and sometime, mna bago man, pero dikit lang -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- this is the time of my website, na mahihiling sa tab view kang browser -->
+
     <title>Personal Portfolio Website</title>
+
+<!-- eni namanm apra ma ma link si CSS na design na yaun sa ibanbg folder
+same sa ibang codes dgd nmamay library online tapos pig call ko nalang dgd para mas maging magayun ang design kang website
+same as, sa simple animation na ginamit ko, which it ibcludes at the ajax library online
+-->
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -15,14 +27,29 @@
 
 </head>
 <body>
+
+<!-- parent ang div na may class name included(class para po sa design na yaun sa style.css) -->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
 
+<!-- 
+sample of tags
+nav
+div
+ul
+li
+img
+section
+heading
+footer
+body
+p
 
+ -->
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#"><span>Portfolio.</span></a></div>
+            <div class="logo"><a href="#"><span><img class="lg" src="lg.jpg" alt="">Portfolio.</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -42,9 +69,9 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
-                <div class="text-2">John Paul O. Milan</div>
+                <div class="text-2">John Paul Milan</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#">Hire me</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"<a style="color: yellow"><h2>Hire me </h2></a>
             </div>
         </div>
     </section>
@@ -71,7 +98,7 @@
             <p>In this portfolio, I am aiming to:
                 <p>Showcase the analytical skills I have developed through my experiences, Reflect on how these experiences have shaped my academic and professional goals and Highlight some of my accomplishments and diverse experiences</p>
             
-                    <a href="#">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1U9Lyn6EWTTGIzSi68kFiK2G2m-G1o-jr/view?usp=sharing">Download PI</a>
                 </div>
             </div>
         </div>
@@ -80,7 +107,7 @@
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My services</h2>
+            <h2 class="title">My Services</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
@@ -112,13 +139,17 @@
     <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
+            <h2 class="title">My Skills</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
+                    <div class="text"> <h2> My Creative Skills & Experiences</h2></div>
                     <p>As a third-year Information technology student, my skills and experience are not that very high, but after I attend in a coding Bootcamp that helps me to boost my programming and developer skills and experience. On the other side, I am an NCII Holder and Passer with a strand of Computer System Servicing, in which I learned to configure, maintain and repair a computer system. In addition to that, I also gain exceptional awards such as being in the top 3 and 8 in a congressional and division level of a Patiribayan Festival – Skills and Terchnolympics and for gaining the best in training and workshops.</p>
+<!-- 
+href po ang responsible sa link(pag nilaagan ko ning link ang # na symbol, and pag e click ta yan, ma redirected ako sa link na yaon sa href)
+ -->
                     <a href="#">Read more</a>
                 </div>
+
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
@@ -150,7 +181,7 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>MySQL</span>
+                            <span>SQL</span>
                             <span>70%</span>
                         </div>
                         <div class="line mysql"></div>
@@ -168,14 +199,18 @@
         </div>
     </section>
 
-    <!-- teams section start -->
+    <!-- teams awards and certificates start -->
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">My Certificates & Awards</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/11.jpg" alt="">
+
+<!-- 
+sa img tag po, may alt siya, para serve as a default comment or id kang tag
+ -->
+                        <img src="images/11.jpg" alt="global">
                         <div class="text">Outstanding Performer Award</div>
                         <p>GLOBAL SITE FOR IT STUDIES, INC.</p>
                     </div>
@@ -222,7 +257,7 @@
                         <p>PARTIDO STATE UNIVERSITY</p>
                     </div>
                     </div>
-                 <div class="card">
+                     <div class="card">
                     <div class="box">
                         <img src="images/htmlcss.png" alt="">
                         <div class="text">Free HTML & CSS Essentials BootCamp</div>
